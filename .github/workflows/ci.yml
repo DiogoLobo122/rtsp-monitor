@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: make build-docker
+        run: docker build -t rtsp-monitor:latest .
 
       - name: Tag Docker image
         run: docker tag docker pull digodigo/projects:rtsp-monitor:latest
