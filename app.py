@@ -10,8 +10,7 @@ from werkzeug.utils import secure_filename
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Required for flashing messages
-
+app.secret_key = 'your_secret_key'
 # Define folders and allowed extensions
 UPLOAD_FOLDER = 'uploads'
 OUTPUT_FOLDER = 'output'
@@ -101,7 +100,7 @@ def generate_pdf_report(report_rows, output_pdf):
             try:
                 current_y = pdf.get_y()
                 pdf.image(row["Screenshot"], x=10, y=current_y, w=100)
-                pdf.ln(80)  # Adjust spacing after the image.
+                pdf.ln(80)
             except Exception as e:
                 pdf.cell(0, 10, f"Error embedding screenshot: {e}", ln=True)
         pdf.line(10, pdf.get_y(), 200, pdf.get_y())

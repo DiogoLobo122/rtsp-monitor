@@ -1,6 +1,7 @@
-Flask
-opencv-python
-fpdf
-requests
-gunicorn
-Werkzeug
+Flask==3.1.0
+Flask-SocketIO==5.5.1
+fpdf==1.7.2
+opencv-python==4.11.0.86
+requests==2.32.3
+requests-toolbelt==1.0.0
+Werkzeug==3.1.3
