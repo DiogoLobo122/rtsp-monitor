@@ -35,7 +35,7 @@ jobs:
         run: docker build -t rtsp-monitor:latest .
 
       - name: Tag Docker image
-        run: docker tag rtsp-monitor:latest digodigo/projects:rtsp-monitor:latest
+        run: docker tag rtsp-monitor:latest digodigo/projects-rtsp-monitor:latest
 
       - name: Push Docker image
-        run: docker push digodigo/projects:rtsp-monitor:latest
+        run: docker push digodigo/projects-rtsp-monitor:latest
