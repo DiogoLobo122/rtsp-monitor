@@ -1,0 +1,6 @@
+Flask
+opencv-python
+fpdf
+requests
+gunicorn
+Werkzeug
